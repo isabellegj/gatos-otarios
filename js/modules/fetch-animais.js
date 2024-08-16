@@ -16,7 +16,7 @@ export default function initFetchAnimais() {
       console.log("Não truxe os gatinho :(");
     }
   }
-
+  // teste
   function createAnimal(animal) {
     const div = document.createElement("div");
     div.classList.add("numero-animal");
