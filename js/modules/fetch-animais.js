@@ -13,7 +13,7 @@ export default function initFetchAnimais() {
       });
       initAnimaNumeros();
     } catch (erro) {
-      console.log("Não truxe os gatinho :(");
+      console.log(erro);
     }
   }
 

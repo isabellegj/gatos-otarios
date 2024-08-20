@@ -7,5 +7,5 @@ fetch("https://blockchain.info/ticker")
     btcPreco.innerText = (100 / json.BRL.sell).toFixed(4);
   })
   .catch((erro) => {
-    console.log("Errrrouuu!");
+    console.log(erro);
   });

@@ -1,7 +1,7 @@
 export default function initTooltip() {
   const tooltips = document.querySelectorAll("[data-tooltip]");
 
-  function onMouseOver(event) {
+  function onMouseOver() {
     const tooltipBox = createTooltipBox(this);
 
     onMouseMove.tooltipBox = tooltipBox;
