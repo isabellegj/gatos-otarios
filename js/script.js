@@ -1,4 +1,4 @@
-// import "../css/style.css";
+import "../css/style.css";
 
 import SoftScroll from "./modules/soft-scroll.js";
 import TabNav from "./modules/tab-nav.js";
