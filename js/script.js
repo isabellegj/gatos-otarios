@@ -4,11 +4,11 @@ import SoftScroll from "./modules/soft-scroll.js";
 import TabNav from "./modules/tab-nav.js";
 import Accordion from "./modules/accordion.js";
 import initAnimationScroll from "./modules/animation-scroll.js";
-import initTooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
 const softScroll = new SoftScroll('[data-menu="suave"] a[href^="#"]');
@@ -23,10 +23,13 @@ const tabNav = new TabNav(
 );
 tabNav.init();
 
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 initAnimationScroll();
-initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchAnimais();
 initFetchBitcoin();
+
+fetchAnimais("../../animaisapi.json", ".numeros-grid");
