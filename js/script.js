@@ -1,6 +1,6 @@
-import "../css/style.css";
+// import "../css/style.css";
 
-import initSoftScroll from "./modules/soft-scroll.js";
+import SoftScroll from "./modules/soft-scroll.js";
 import initTabNav from "./modules/tab-nav.js";
 import initAccordion from "./modules/accordion.js";
 import initAnimationScroll from "./modules/animation-scroll.js";
@@ -11,7 +11,9 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
-initSoftScroll();
+const softScroll = new SoftScroll('[data-menu="suave"] a[href^="#"]');
+softScroll.init();
+
 initAnimationScroll();
 initAccordion();
 initTabNav();
